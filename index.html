@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="css/todolistapp.css">
+</head>
+<body>
+    <div class="entireWrapper">
+    <div class="toDoList" id="toDoList">
+        <h1>My Todo List</h1>
+        <div class="inputWrapper">
+        <input type="text" id="userInput" placeholder="My todos...">
+        <span onclick="addElement()" class="addInputBtn">Add</span>
+        </div>
+    </div>
+<div class="ulContainer">
+    <ul id="myList">
+        <li>Wake up <!-- <span class="removeBtn">Remove</span> --></li>
+        <li class="checked">Pray <!-- <span class="removeBtn">Remove</span> --></li>
+        <li>Prep meal <!-- <span class="removeBtn">Remove</span> --></li>
+        <li>Wash the dishes <!-- <span class="removeBtn">Remove</span> --></li>
+        <li>Freshen up and get dressed <!-- <span class="removeBtn">Remove</span> --></li>
+        <li>Go to work <!-- <span class="removeBtn">Remove</span> --></li>
+        <li>Study JavaScript <!-- <span class="removeBtn">Remove</span> --></li>
+    </ul>
+</div>
+</div>
+
+    <script src="javascript/todolistapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: crimson;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.entireWrapper {
+    margin: 30px auto;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 10px 15px 50px;
+    background-color: crimson;
+    font-size: 16px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    text-align: justify;
+    list-style-type: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+
+ul li:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+ul li:nth-child(even) {
+    color: whitesmoke;
+}
+
+ul li.checked {
+    background: rgb(252, 187, 200);
+    color: #000000;
+}
+
+ul li.checked::before {
+    content: "";
+    position: absolute;
+    border: solid crimson;
+    border-width: 0 3px 3px 0;
+    top: 15px;
+    left: 20px;
+    transform: rotate(50deg);
+    height: 20px;
+    width: 10px;
+    
+    
+}
+
+.removeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 15px 12px 15px;
+    margin: 0 5px 5px 0;
+    border: 2px solid crimson;
+}
+
+.removeBtn:hover {
+    background-color: rgb(249, 132, 155);
+    color: #000000;
+}
+
+.toDoList {
+    padding: 40px 50px;
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+.todoList:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.addInputBtn {
+    padding: 15px;
+    width: 20%;
+    background-color: rgb(252, 187, 200);
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 0;
+}
+
+.addInputBtn:hover {
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+@media (max-width:480px) {
+    .toDoList {
+        width: 100%;
+        
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .input {
+        width: 80%;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    span {
+        width: 20%;
+        font-size: 12px;
+    }
+
+    ul li {
+        width: 90%;
+        height: 40px;
+        font-size: 12px;
+        text-align: justify;
+        list-style-type: none;
+        margin-left: 20px;
+
+    }
+
+    .ulContainer {
+        width: 100%;
+    }
+
+    .entireWrapper {
+        margin: 30px auto;
+    }
+    
+    ul li.checked::before {
+        content: "";
+        position: absolute;
+        border: solid crimson;
+        border-width: 0 2px 2px 0;
+        top: 8px;
+        left: 20px;
+        transform: rotate(50deg);
+        height: 20px;
+        width: 10px;
+    
+        
+        
+    }
+    
+
+}
+
