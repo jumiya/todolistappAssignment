@@ -10,6 +10,7 @@ body {
 }
 .entireWrapper {
     margin: 30px auto;
+    width: 700px;
 }
 
 ul li {
@@ -160,6 +161,7 @@ input {
 
     .entireWrapper {
         margin: 30px auto;
+        width: 400px;
     }
     
     ul li.checked::before {
